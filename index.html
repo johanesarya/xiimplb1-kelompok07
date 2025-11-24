@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      /* Style the header */
+      header {
+        background-color: pink;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        display: flex;
+        align-items: center; /* center vertical */
+        height: 305px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 30px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding-top: 30;
+        padding-bottom: 30;
+      }
+
+      li a {
+        display: block;
+        color: black;
+        padding: 8px;
+        text-decoration: none;
+      }
+
+      /* Change the link and background color on hover */
+      li a:hover {
+        background-color: #555555;
+        color: white;
+      }
+
+      .container {
+        display: flex;
+        background-color: dodgerblue;
+        margin: 0;
+      }
+
+      .container div {
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #000;
+        font-size: 20px;
+      }
+
+      .promosi h1 {
+        text-align: center;
+      }
+
+      .container-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: blanchedalmond;
+        padding: 20px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .btn-download {
+        display: inline-block;
+        padding: 10px 18px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+
+      .btn-download:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Kolaborasi Matematika, PKK, dan KAI</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#promosi">Promosi</a></li>
+          <li><a href="#laporan">Laporan</a></li>
+        </ul>
+      </nav>
+
+      <!-- Produk -->
+      <div id="produk" class="container">
+        <div>
+          <img src="produk.webp" width="140px"alt="" />
+        </div>
+        <div>
+          <caption>
+            “Kadang hari bisa bikin capek, tugas numpuk, drama sama temen, atau bahkan overthinking nggak jelas 😵‍💫. Nah, sebelum mood makin ancur, coba deh isi ulang energi kamu dengan yang fresh dan manis: Salad Buah Seger! 🥗🍍
+
+Campuran buah-buah pilihan yang seger + topping creamy manis bikin hati adem lagi 💕. Rasanya nggak cuma enak, tapi juga sehat—cocok banget buat nemenin belajar, nongkrong, atau sekadar me time.
+
+✨ Jangan biarin mood kamu turun, ayo naikkin lagi dengan satu cup salad buah. Dijamin bikin hari kamu lebih happy! 🍓”
+          </caption>
+          <div>
+            <a href="laporan-penjualan.pdf" download class="btn-download">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promosi -->
+    <div class="promosi" id="promosi">
+      <h1>PROMOSI</h1>
+      <div class="container-2">
+        <video width="350" controls>
+          <source src="vidiopromosi.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <img src="promosi.jpg" width="300px" />
+      </div>
+    </div>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
